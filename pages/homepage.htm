@@ -3,17 +3,35 @@ url = "/"
 layout = "default"
 is_hidden = 0
 
+[viewBag]
+activeMenu = 'homepage'
+
 ==
 
 <?
 
 function onStart(){
-	$this['test_message'] = 'Hello';
+	$this['test_message'] = 'Hello testing php section inside page template';
 }
 
 ?>
 
 ==
 
-<h1>This is our homepage</h1>
-<h3>{{ test_message }}</h3>
+<h1>This is our homepage page template</h1>
+
+{{ test_message }}
+
+<br /><br />
+
+{% partial 'testpartial.htm' %}
+
+<br /><br />
+
+{% content 'testcontent.txt' %}
+
+<br />
+
+<audio src="" controls></audio><br />
+<video src="" controls></video><br />
+<video src="" width="320" height="200" controls preload></video>

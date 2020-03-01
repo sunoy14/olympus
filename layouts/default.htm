@@ -18,6 +18,16 @@ description = "Default layout"
     </head>
     <body>
 
+	<!-- Main navigation -->
+	<ul class="clearfix">
+		<li class="{{ viewBag.activeMenu == 'homepage' ? 'active' }}">Home</li>
+		<li class="{{ viewBag.activeMenu == 'about' ? 'active' }}">About</li>
+		<li class="{{ viewBag.activeMenu == 'services' ? 'active' }}">Services</li>
+		<li class="{{ viewBag.activeMenu == 'contact' ? 'active' }}">Contact</li>
+	</ul> <!-- end of ul -->
+
+	<h1>This is a layout template</h1>
+
         <!-- Content -->
         <section id="layout-content">
             {% page %}
