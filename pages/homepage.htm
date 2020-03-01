@@ -1,6 +1,19 @@
 title = "Homepage"
-url = "/homepage"
+url = "/"
 layout = "default"
 is_hidden = 0
+
 ==
+
+<?
+
+function onStart(){
+	$this['test_message'] = 'Hello';
+}
+
+?>
+
+==
+
 <h1>This is our homepage</h1>
+<h3>{{ test_message }}</h3>
